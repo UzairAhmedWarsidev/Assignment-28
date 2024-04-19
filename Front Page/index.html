@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- alert on click -->
+    <a onclick="var message = 'hello student';alert(message)" href="#">Click here</a>
+    <br><br>
+
+    <a onclick="alert(msg)" href="#">Click here for 2nd msg</a>
+<br>
+    <!-- images alert in click -->
+
+    <img onclick="alert(oneImage)" src="https://www.sahivalue.com/product-images/14+pro+max.jpg/293890000021697778/400x400" width="200px" alt="">
+
+    <!-- delete button for deleting entire row -->
+
+  
+
+
+    <table>
+        <tr>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Class</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Jhon</td>
+          <td>10</td>
+          <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+            
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mark</td>
+            <td>8</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+            
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>James</td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+            
+        </tr>
+        <!-- Repeat the above <tr> block for other rows -->
+      </table>
+      
+
+      <!-- Mouse over and out -->
+
+      <img onmouseover="src= 'https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=600&h=400' " onmouseout="src='https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1713225600&semt=ais'" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"  width="200px"  alt="">
+      
+
+      <!-- Counter -->
+      <br><br>
+      <h4>COUNTER</h4>
+
+      <p>Counter: <span id="counter">0</span></p>
+<button onclick="changeCounter(-1)">Decrease</button>
+<button onclick="changeCounter(1)">Increase</button>
+
+
+
+
+</body>
+
+<script src="app.js"></script>
+</html>
